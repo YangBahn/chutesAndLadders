@@ -8,6 +8,8 @@ import java.util.stream.IntStream;
 import static java.lang.System.in;
 import static java.lang.System.out;
 
+
+// todo - tests would be written for GameProcessor
 public class GameProcessor {
 
     private final Scanner scanner = new Scanner(in);
@@ -18,8 +20,6 @@ public class GameProcessor {
     private int currentPlayerIndex = 1;
     private DTOs.Dice dice = new DTOs.Dice();
     private Board board;
-
-
 
     void start() throws IOException {
         board = new Board();
