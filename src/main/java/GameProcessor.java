@@ -1,5 +1,7 @@
 import java.io.IOException;
-import java.util.*;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Scanner;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -17,11 +19,7 @@ public class GameProcessor {
     private DTOs.Dice dice = new DTOs.Dice();
     private Board board;
 
-    public static void main(String[] args) throws IOException {
-        GameProcessor processor = new GameProcessor();
-        processor.start();
 
-    }
 
     void start() throws IOException {
         board = new Board();
